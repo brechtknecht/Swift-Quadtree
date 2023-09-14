@@ -117,7 +117,7 @@ final public class BMQuadtree <T: AnyObject> {
     if Float(self.objects.count) < self.minCellSize,
       self.hasQuads == false {
       if self.depth > 10 {
-        log.debug("QuadTree depth", element, self.depth, self.minCellSize)
+        // log.debug("QuadTree depth", element, self.depth, self.minCellSize)
       }
       self.objects.append((element, point))
       return BMQuadtreeNode(tree: self)
